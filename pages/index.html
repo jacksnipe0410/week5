@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <title>ANSWER</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+      <%- include('./layout/header'); -%>
+        <main class="px-4">
+          <header class="py-4">
+            <div class="nav  align-items-center">
+                <h3 class="fw-bold me-4">
+                  Assignment
+                </h3>
+      
+                <div class="dropdown me-auto">
+                  <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Courses
+                    <span class="material-symbols-outlined text-success align-bottom">
+                      keyboard_arrow_down
+                      </span>
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Chapter</a></li>
+                    <li><a class="dropdown-item" href="#">Final</a></li>
+                  </ul>
+                </div>
+                <a class="link-dark" href="#">
+                  <span class="material-symbols-outlined pe-3">search</span>
+                </a>
+                <a  class="link-dark" href="#">
+                  <span class="material-symbols-outlined ">notifications_active</span>
+                </a>
+            </div>
+          </header>
+          <div class="d-flex align-items-center">
+            <div class="dropdown me-auto">
+            <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All (4)
+              <span class="material-symbols-outlined text-success align-bottom">
+                keyboard_arrow_down
+                </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Chapter</a></li>
+              <li><a class="dropdown-item" href="#">Final</a></li>
+            </ul>
+            </div>
+            <small class="text-body-secondary ">2 comments</small>
+          </div>
+          <div class="d-flex">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group ">
+                  <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+                <div class="d-flex w-100 justify-content-between align-items-end mb-0">
+                  <p class="mb-0">Chapter Assignment 2</p>
+                  <time datetime="" class="text-body-secondary">3 days ago</time>
+                </div>
+                <div class="d-flex mb-1 text-truncate justify-content-between align-items-end">
+                  <p class="mail-title mb-0 fw-bold">Please check this file…</p>
+                  <small class="text-body-secondary ">Emily Wang</small>
+                </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between align-items-end mb-0">
+                      <p class="mb-0">Chapter Assignment 1</p>
+                      <time datetime="" class="text-body-secondary">12 hrs ago</time>
+                    </div>
+                    <div class="d-flex mb-1 text-truncate justify-content-between align-items-end">
+                      <p class="mail-title mb-0 fw-bold">My Homework</p>
+                      <small class="text-body-secondary ">David Xu</small>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between align-items-end mb-0">
+                      <p class="mb-0">Final Assignment</p>
+                      <time datetime="" class="text-body-secondary">18 hrs ago</time>
+                    </div>
+                    <div class="d-flex mb-1 text-truncate justify-content-between align-items-end">
+                      <p class="mail-title mb-0 fw-bold">Have a problem with this…</p>
+                      <small class="text-body-secondary ">Tony Wei</small>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between align-items-end mb-0">
+                      <p class="mb-0">Final Assignment</p>
+                      <time datetime="" class="text-body-secondary">19 hrs ago</time>
+                    </div>
+                    <div class="d-flex mb-1 text-truncate justify-content-between align-items-end">
+                      <p class="mail-title mb-0 fw-bold">Did I do it right?</p>
+                      <small class="text-body-secondary ">Christina Lin</small>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="mail-content">
+              <div class="card mb-3">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                  <div class="div">
+                  <small class="mb-1">Chapter Assignment 2</small>
+                  <p class="mail-title mb-0 fw-bold">Please check this file for me, thanks!</p>
+                  </div>
+                  <span class="material-symbols-outlined">
+                    more_vert
+                    </span>
+                </div>
+                <div class="card-body pe-4">
+                  <div class="d-flex ">
+                  <div class="flex-shrink-0">
+                      <img src="../assets/images/emilywang.jpeg" class="object-fit-cover rounded-circle" width="40px" height="40px" alt="Andy chen">
+                  </div>
+                  <div class="flex-grow-1 ms-3 border-bottom border-secondary-subtle">
+                    <div class="sender mb-3">
+                      <h5 class="card-title fw-bold mb-0">Andy Chen</h5>
+                      <time datetime="" class="text-secondary fs-2"><small>10:38 AM (4 hours ago)</small> </time>
+                    </div>
+                      <p class="card-text fs-2 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>  ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                      <a href="#" class="btn btn-light border-light-subtle fw-bold mb-3" download>
+                        <span class="material-symbols-outlined align-bottom">
+                          attach_file
+                          </span>
+                        HW-2-David.zip
+                      </a>
+                  </div>
+                  </div>
+                  <div class="d-flex pt-3">
+                  <div class="flex-shrink-0">
+                      <img src="../assets/images/andychen.jpeg" class="object-fit-cover rounded-circle" width="40px" height="40px" alt="Andy chen">
+                  </div>
+                  <div class="flex-grow-1 ms-3 ">
+                    <div class="d-flex justify-content-between">
+                      <div class="sender mb-3">
+                        <h5 class="card-title fw-bold mb-0">Andy Chen (You)</h5>
+                        <time datetime="" class="text-secondary fs-2"><small>13:24 AM (1 hours ago)</time>
+                      </div>
+                      <div class="icon">
+                        <a class="link-dark" href="#">
+                          <span class="material-symbols-outlined star_outline pe-3">star_outline</span>
+                        </a>
+                        <a  class="link-dark" href="#">
+                          <span class="material-symbols-outlined ">notifications_active</span>
+                        </a>
+                      </div>
+                    </div>
+                      <p class="card-text fs-2">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                      <p>You can: </p>
+                      <ul >
+                        <li>adjust the <code>vertical-align</code>  of the image to position it elsewhere (e.g. <code>the middle</code>) or</li>
+                        <li>change the <code>display</code>  so it isn’t inline.</li>
+                      </ul>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center position-relative">
+                  <div class="page-arrow">
+                      <a class="px-2 align-center" href="#" aria-label="Previous">
+                        <span class="material-symbols-outlined">
+                          chevron_left
+                          </span>
+                      </a>
+                      <a class="px-2 align-center" href="#" aria-label="Next">
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                          </span>
+                      </a>
+                  </div>
+                  <div class="mail-button">
+                    <button type="button" class="btn btn-outline-success px-4 me-2">Mark as read</button>
+                    <button class="btn btn-success px-4 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Reply
+                    </button>
+                    <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseExample">
+                        <div class="card">
+                          <div class="card-header d-flex align-items-center">
+                            <div class="dropdown">
+                              <button class="btn  dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Body Text
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                            <span class="material-symbols-outlined px-2">format_bold</span>
+                            <span class="material-symbols-outlined px-2">format_italic</span>
+                            <span class="material-symbols-outlined px-2">format_list_bulleted</span>
+                            <span class="material-symbols-outlined px-2">format_list_numbered</span>
+                            <span class="material-symbols-outlined px-2">image</span>
+                            <span class="material-symbols-outlined px-2">attachment</span>
+                            <span class="material-symbols-outlined px-2">code</span>
+                          </div>
+                          <div class="card-body">
+                            <textarea class="form-control h-100  border-0" id="answer content" rows="6" placeholder="Reply an answer..."></textarea>
+                            <div class="d-flex justify-content-end">
+                              <button class="btn btn-outline-success px-4 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Cancel
+                              </button>
+                              <button type="button" class="btn btn-success px-4">Reply</button>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>  
+                  </div>
+                  
+                
+              </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

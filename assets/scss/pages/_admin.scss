@@ -1,0 +1,15 @@
+.md-18 { 
+    font-size: 18px; 
+}
+
+.info-card p{
+    margin-bottom: 0;
+}
+.arrow-icon{
+    transform: rotate(180deg);
+}
+
+.arrow-icon:focus{
+    transition: .2s;
+    transform: rotate(0deg);
+}
